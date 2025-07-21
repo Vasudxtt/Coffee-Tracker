@@ -2,7 +2,10 @@
 
 function App() {
   return (
-    <>   
+    <>
+    <div>
+      <h1>Coffee Tracker</h1>
+    </div>
     </>
   )
 }
