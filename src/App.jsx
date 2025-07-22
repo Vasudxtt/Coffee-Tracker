@@ -18,7 +18,6 @@ const authenticatedContent = (
 
   return (
     <Layout>
-      <h1>hello</h1>
       <Hero/>
       <CoffeeForm/>
       {isAuthenticated && (authenticatedContent)}
