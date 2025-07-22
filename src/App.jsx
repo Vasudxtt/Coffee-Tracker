@@ -7,6 +7,10 @@ function App() {
 
 const isAuthenticated = false
 
+const authenticatedContent = (
+  <>
+  </>
+)
 
   return (
     <Layout>
