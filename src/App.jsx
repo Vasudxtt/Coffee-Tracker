@@ -1,3 +1,4 @@
+import Hero from "./components/Hero"
 import Layout from "./components/Layout"
 
 
@@ -8,7 +9,7 @@ const isAuthenticated = false
 
   return (
     <Layout>
-      
+      <Hero/>
     </Layout>
   )
 }
