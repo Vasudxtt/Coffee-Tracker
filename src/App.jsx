@@ -20,6 +20,7 @@ const authenticatedContent = (
     <Layout>
       <Hero/>
       <CoffeeForm/>
+      {isAuthenticated && (authenticatedContent)}
     </Layout>
   )
 }
