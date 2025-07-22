@@ -1,12 +1,14 @@
 
 
 function App() {
+
+const isAuthenticated = false
+
+
   return (
-    <>
-    <div>
-      <h1>Coffee Tracker</h1>
-    </div>
-    </>
+    <Layout>
+      
+    </Layout>
   )
 }
 
