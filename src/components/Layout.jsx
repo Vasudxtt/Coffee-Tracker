@@ -12,7 +12,7 @@ export default function Layout(props){
     <>
     {header}
     <main>
-      
+      {children}
     </main>
     </>
   )
