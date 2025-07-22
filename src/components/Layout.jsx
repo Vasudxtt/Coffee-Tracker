@@ -11,6 +11,9 @@ export default function Layout(props){
   return(
     <>
     {header}
+    <main>
+      
+    </main>
     </>
   )
 }
