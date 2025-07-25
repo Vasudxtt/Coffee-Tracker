@@ -21,7 +21,7 @@ export default function Stats() {
     <StatCard title="Daily Caffine"></StatCard>
     <StatCard title="Avg # of Coffees"></StatCard>
     <StatCard title="Daily Cost(Rs)"></StatCard>
-    <StatCard title=""></StatCard>
+    <StatCard title="Total Cost(Rs)"></StatCard>
       </div>
     </>
   )
