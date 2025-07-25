@@ -6,8 +6,7 @@ import { coffeeOptions } from "../utils"
 export default function 
 CoffeeForm() {
 
-const[showcoffeetypes,setShowcoffeeTypes] = useState
-
+const[showcoffeetypes,setShowcoffeeTypes] = useState(false)
 
   return (
     <>
