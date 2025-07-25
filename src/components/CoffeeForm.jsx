@@ -31,7 +31,7 @@ export default function CoffeeForm() {
         </option>
         {coffeeOptions.map((option,optionIndex)=>{
           return(
-            <option value={optionIndex} key={optionIndex}>
+            <option value={option.name} key={optionIndex}>
               {option.name}
             </option>
           )
