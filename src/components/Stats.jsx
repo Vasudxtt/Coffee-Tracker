@@ -73,7 +73,9 @@ caffineLevel<statusLevels['moderate'].maxLevel?'moderate':'high'
         {getTopThreeCoffees(coffeeConsumptionHistory.map((coffee,coffeeIndex)=>{
           return(
             <tr key={coffeeIndex}>
-              
+              <td>{coffee.name}</td>
+              <td>{coffee.count}</td>
+              <td>{coffee.percentage}</td>
             </tr>
           )          
         }))}
