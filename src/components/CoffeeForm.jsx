@@ -25,7 +25,7 @@ const[showcoffeetypes,setShowcoffeeTypes] = useState(false)
           </button>
           )
         })}
-        <button className="button-card">
+        <button  onClick={()=>setShowcoffeeTypes(true)} className="button-card">
           <h4>Other</h4>
           <p>n/a</p>
         </button>
