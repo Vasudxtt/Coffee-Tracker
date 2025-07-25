@@ -50,7 +50,7 @@ const caffineLevel = calculateCurrentCaffeineLevel(coffeeConsumptionHistory)
     </StatCard>
 
     <StatCard title="Daily Cost(Rs)">
-      <p><span className="stat-text">{stats.daily_cost}</span>mg</p>
+      <p><span className="stat-text">Rs.{stats.daily_cost}</span></p>
     </StatCard>
 
     <StatCard title="Total Cost(Rs)">
