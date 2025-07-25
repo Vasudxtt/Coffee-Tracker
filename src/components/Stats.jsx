@@ -1,4 +1,4 @@
-import { calculateCurrentCaffeineLevel, coffeeConsumptionHistory, statusLevels } from "../utils"
+import { calculateCoffeeStats, calculateCurrentCaffeineLevel, coffeeConsumptionHistory, statusLevels } from "../utils"
 
 function StatCard(props){
   const{lg,title,children}=props
@@ -22,6 +22,8 @@ export default function Stats() {
 //   average_coffees:2.3,
 //   total_cost:220
 // }
+
+const stats = calculateCoffeeStats(coffeeConsumptionHistory)
 
 const caffineLevel = calculateCurrentCaffeineLevel(coffeeConsumptionHistory)
 
