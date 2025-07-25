@@ -64,7 +64,9 @@ caffineLevel<statusLevels['moderate'].maxLevel?'moderate':'high'
     <table className="stst-table">
       <thead>
         <tr>
-          <th></th>
+          <th>Coffee Name</th>
+          <th>Number of Purchase</th>
+          <th>Percentage of Total</th>
         </tr>
       </thead>
     </table>
