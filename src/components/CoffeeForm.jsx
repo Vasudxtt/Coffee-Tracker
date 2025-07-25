@@ -37,7 +37,8 @@ const[showCoffeeTypes,setShowCoffeeTypes] = useState(false)
         </button>
       </div>
       {showCoffeeTypes && (
-      <select name="coffee-list" id="coffee-list">
+      <select onChange={(e)=>{setSelectedCoffee(e.target.value)
+      }}name="coffee-list" id="coffee-list">
         <option value={null}>
           Select a coffee type
         </option>
