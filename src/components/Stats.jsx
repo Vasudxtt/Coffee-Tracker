@@ -70,7 +70,13 @@ caffineLevel<statusLevels['moderate'].maxLevel?'moderate':'high'
         </tr>
       </thead>
       <tbody>
-        {getTopThreeCoffees(coffeeConsumptionHistory.map)}
+        {getTopThreeCoffees(coffeeConsumptionHistory.map((coffee,coffeeIndex)=>{
+          return(
+            <tr key={coffeeIndex}>
+              
+            </tr>
+          )          
+        }))}
       </tbody>
     </table>
       </div>
