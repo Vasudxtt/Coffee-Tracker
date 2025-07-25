@@ -61,7 +61,7 @@ caffineLevel<statusLevels['moderate'].maxLevel?'moderate':'high'
     <StatCard title="Total Cost(Rs)">
       <p><span className="stat-text">Rs. {stats.total_cost}</span></p>
     </StatCard>
-    <table className="stst-table">
+    <table className="stat-table">
       <thead>
         <tr>
           <th>Coffee Name</th>
