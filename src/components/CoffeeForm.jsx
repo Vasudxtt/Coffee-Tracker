@@ -38,6 +38,14 @@ export default function CoffeeForm() {
         })}
       </select>
       <h4>Select coffee amount(Rs.)</h4>
+      <input type="number" placeholder="40.00" className="w-full" />
+      <h4>Time Since Consumption</h4>
+      <div className="time-entry">
+        <div>
+          <h6>Hours</h6>
+          <select id="hours-select"></select>
+        </div>
+      </div>
     </>
   )
 }
