@@ -34,7 +34,7 @@ const[showCoffeeTypes,setShowCoffeeTypes] = useState(false)
           <p>n/a</p>
         </button>
       </div>
-      {(
+      {showCoffeeTypes&&(
       <select name="coffee-list" id="coffee-list">
         <option value={null}>
           Select a coffee type
