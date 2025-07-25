@@ -20,6 +20,7 @@ export default function Stats() {
     <StatCard></StatCard>
     <StatCard></StatCard>
     <StatCard></StatCard>
+    <StatCard></StatCard>
       </div>
     </>
   )
