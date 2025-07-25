@@ -54,7 +54,7 @@ const[coffeeCost,setCoffeeCost] = useState(0)
       </select>
       )}
       <h4>Select coffee amount(Rs.)</h4>
-      <input type="number" placeholder="40.00" className="w-full" />
+      <input type="number" placeholder="40.00" className="w-full" value={coffeeCost} onChange={(e)=>{setCoffeeCost(e.target.value)}} />
       <h4>Time Since Consumption</h4>
       <div className="time-entry">
         <div>
