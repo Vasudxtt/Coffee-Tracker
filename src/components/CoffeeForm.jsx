@@ -1,3 +1,7 @@
+import {coffeeOptions} from "../utils"
+
+
+
 export default function CoffeeForm() {
   return (
     <>
@@ -8,6 +12,7 @@ export default function CoffeeForm() {
        <h4>Select coffee type</h4>
        {/* this div will have the 6 button of the drop down */}
             <div className="coffee-grid">
+              {coffeeOptions}
             </div>
     </>
   )
