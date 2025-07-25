@@ -8,6 +8,11 @@ export default function Hero(){
     <p>✅Measuring Your Blood Caffine Levels</p>
     <p>✅Costing and Quantifying Your Addiction</p>
     </div>
+    <div className="card info-card">
+      <div>
+      <h3>Did You Know...</h3>
+      </div>
+    </div>
     </>
   )
 }
