@@ -25,6 +25,8 @@ const stats = {
 
 const caffineLevel = calculateCurrentCaffeineLevel(coffeeConsumptionHistory)
 
+const warningLevel = caffineLevel<statusLevels['low'].maxLevel?
+
   return (
     <>
       <div className="section-header">
