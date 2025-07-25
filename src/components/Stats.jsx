@@ -39,9 +39,9 @@ caffineLevel<statusLevels['moderate'].maxLevel?'moderate':'high'
     <StatCard lg title="Active Caffine Level">
       <div className="stats-grid">
         <p><span className="stat-text">{caffineLevel}</span>mg</p>
-        <h5 style={{color:statusLevels['low'].color,background:statusLevels['low'].background}}>Low</h5>
+        <h5 style={{color:statusLevels[warningLevel].color,background:statusLevels[warningLevel].background}}>Low</h5>
       </div>
-      <p>{statusLevels['low'].description}</p>
+      <p>{statusLevels[warningLevel].description}</p>
     </StatCard>
 
     <StatCard title="Daily Caffine">
