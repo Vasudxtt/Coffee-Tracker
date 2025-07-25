@@ -37,6 +37,7 @@ export default function CoffeeForm() {
           )
         })}
       </select>
+      <h4>Select coffee amount(Rs.)</h4>
     </>
   )
 }
