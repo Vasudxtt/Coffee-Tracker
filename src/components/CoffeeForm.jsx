@@ -29,6 +29,13 @@ export default function CoffeeForm() {
         <option value={null}>
           Select a coffee type
         </option>
+        {coffeeOptions.map((option,optionIndex)=>{
+          return(
+            <option value={optionIndex} key={optionIndex}>
+              {option.name}
+            </option>
+          )
+        })}
       </select>
     </>
   )
