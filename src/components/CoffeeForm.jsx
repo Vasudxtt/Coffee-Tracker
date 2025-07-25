@@ -34,6 +34,7 @@ const[showCoffeeTypes,setShowCoffeeTypes] = useState(false)
           <p>n/a</p>
         </button>
       </div>
+      {(
       <select name="coffee-list" id="coffee-list">
         <option value={null}>
           Select a coffee type
@@ -46,6 +47,7 @@ const[showCoffeeTypes,setShowCoffeeTypes] = useState(false)
           )
         })}
       </select>
+      )}
       <h4>Select coffee amount(Rs.)</h4>
       <input type="number" placeholder="40.00" className="w-full" />
       <h4>Time Since Consumption</h4>
