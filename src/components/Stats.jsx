@@ -16,7 +16,7 @@ export default function Stats() {
         <h2>Stats</h2>
       </div>
       <div className="stats-grid">
-    <StatCard></StatCard>
+    <StatCard lg></StatCard>
     <StatCard></StatCard>
     <StatCard></StatCard>
     <StatCard></StatCard>
