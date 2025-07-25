@@ -62,7 +62,9 @@ export default function CoffeeForm() {
           </select>
         </div>
       </div>
-      <button>Add Entry</button>
+      <button>
+        <p>Add Entry</p>
+        </button>
     </>
   )
 }
