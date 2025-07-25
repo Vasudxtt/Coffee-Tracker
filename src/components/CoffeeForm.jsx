@@ -18,7 +18,7 @@ const[min,setMin] = useState(0)
 
 // Now we will define a function here
 function handleSubmitForm(){
-  
+
 }
   return (
     <>
@@ -86,7 +86,7 @@ function handleSubmitForm(){
           </select>
         </div>
       </div>
-      <button>
+      <button onClick={handleSubmitForm}>
         <p>Add Entry</p>
         </button>
     </>
