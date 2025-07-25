@@ -3,6 +3,7 @@ function StatCard(props){
   return(
     <div className={'card stat-card ' + (lg? 'col-span-2' : '')}>
       {title}
+      {/* Underneath this is the children content which is the content between the opening and the closing tag */}
     </div>
   )
 }
