@@ -10,7 +10,7 @@ CoffeeForm() {
 // writing it false help us to tell that we dont want the user to see it until it clicks the other option
 const[showCoffeeTypes,setShowCoffeeTypes] = useState(false) 
 // now we are setting up the cost
-
+const[coffeeCost,setCoffeeCost] = useState(0)
 
   return (
     <>
