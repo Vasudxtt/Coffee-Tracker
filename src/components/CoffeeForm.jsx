@@ -5,7 +5,7 @@ import { coffeeOptions } from "../utils"
 
 export default function 
 CoffeeForm() {
-  // now this usestate is for coffee selection
+  // now this usestate is for coffee selection and its gonna be null by default as yk we dont have any selection
   const[coffeeSelection,setCoffeeSelection] = useState(null)
 // writing it false help us to tell that we dont want the user to see it until it clicks the other option
 const[showcoffeetypes,setShowcoffeeTypes] = useState(false) 
