@@ -18,7 +18,7 @@ export default function Stats() {
       <div className="stats-grid">
         {/* if we want we can write lg like this to as the value is been defined and if we write lg={true} then it is also fine */}
     <StatCard lg title="Active Caffine Level"></StatCard>
-    <StatCard title=""></StatCard>
+    <StatCard title="Daily Caffine"></StatCard>
     <StatCard title=""></StatCard>
     <StatCard title=""></StatCard>
     <StatCard title=""></StatCard>
