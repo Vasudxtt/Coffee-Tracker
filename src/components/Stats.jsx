@@ -16,12 +16,12 @@ function StatCard(props){
 
 export default function Stats() {
 //so now we will create some fake data
-const stats = {
-  daily_caffine:240,
-  daily_cost:40.00,
-  average_coffees:2.3,
-  total_cost:220
-}
+// const stats = {
+//   daily_caffine:240,
+//   daily_cost:40.00,
+//   average_coffees:2.3,
+//   total_cost:220
+// }
 
 const caffineLevel = calculateCurrentCaffeineLevel(coffeeConsumptionHistory)
 
