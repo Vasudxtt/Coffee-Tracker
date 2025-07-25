@@ -1,3 +1,12 @@
+function StatCard(){
+  return(
+    <div></div>
+  )
+}
+
+
+
+
 export default function Stats() {
   return (
     <>
@@ -6,7 +15,7 @@ export default function Stats() {
         <h2>Stats</h2>
       </div>
       <div className="stats-grid">
-        
+
       </div>
     </>
   )
