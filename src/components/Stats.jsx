@@ -1,4 +1,4 @@
-import { calculateCoffeeStats, calculateCurrentCaffeineLevel, coffeeConsumptionHistory, statusLevels } from "../utils"
+import { calculateCoffeeStats, calculateCurrentCaffeineLevel, coffeeConsumptionHistory, getTopThreeCoffees, statusLevels } from "../utils"
 
 function StatCard(props){
   const{lg,title,children}=props
@@ -69,6 +69,9 @@ caffineLevel<statusLevels['moderate'].maxLevel?'moderate':'high'
           <th>Percentage of Total</th>
         </tr>
       </thead>
+      <tbody>
+        {getTopThreeCoffees}
+      </tbody>
     </table>
       </div>
     </>
