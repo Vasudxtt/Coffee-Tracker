@@ -18,6 +18,10 @@ export default function CoffeeForm() {
                   <p>{option.caffeine}mg</p>
                 </button>
               })}
+              <button className="button-card">
+                <h4>Other</h4>
+                <p>n/a</p>
+              </button>
             </div>
     </>
   )
