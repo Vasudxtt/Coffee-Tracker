@@ -4,6 +4,7 @@ export default function Hero(){
     <h1>Track your coffee <abbr title="An enthusiast or devotee">Fiends</abbr></h1>
     <div className="benefits-list">
     <h3 className="font-bolder">Try<span className="text-gradient">Caffiend</span> and start...</h3>
+    <p>✅Tracking Every Coffee</p>
     </div>
     </>
   )
