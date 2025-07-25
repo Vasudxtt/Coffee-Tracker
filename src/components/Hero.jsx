@@ -10,6 +10,7 @@ export default function Hero(){
     </div>
     <div className="card info-card">
       <div>
+         <i className="fa-solid fa-circle-info"></i>
       <h3>Did You Know...</h3>
       </div>
     </div>
