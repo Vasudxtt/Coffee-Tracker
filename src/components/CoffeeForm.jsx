@@ -25,6 +25,7 @@ export default function CoffeeForm() {
           <p>n/a</p>
         </button>
       </div>
+      <select name="coffee-list" id="coffee-list"></select>
     </>
   )
 }
