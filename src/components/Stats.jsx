@@ -1,4 +1,5 @@
-function StatCard(){
+function StatCard(props){
+  const{lg,title,children}=props
   return(
     <div></div>
   )
