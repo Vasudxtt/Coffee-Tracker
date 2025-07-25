@@ -47,7 +47,7 @@ caffineLevel<statusLevels['moderate'].maxLevel?'moderate':'high'
     </StatCard>
 
     <StatCard title="Daily Caffine">
-      <p><span className="stat-text">{stats.daily_caffine}</span>mg</p>
+      <p><span className="stat-text">{stats.daily_caffeine}</span>mg</p>
     </StatCard>
 
     <StatCard title="Avg # of Coffees">
