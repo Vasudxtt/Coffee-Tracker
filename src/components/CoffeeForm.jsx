@@ -11,6 +11,7 @@ CoffeeForm() {
 const[showCoffeeTypes,setShowCoffeeTypes] = useState(false) 
 // now we are setting up the cost
 const[coffeeCost,setCoffeeCost] = useState(0)
+// now we will set the hour
 
   return (
     <>
