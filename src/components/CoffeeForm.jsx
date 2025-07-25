@@ -13,7 +13,10 @@ export default function CoffeeForm() {
        {/* this div will have the 6 button of the drop down */}
             <div className="coffee-grid">
               {coffeeOptions.slice(0,5).map((option,optionIndex)=>{
-                <button className="button-card" key={optionIndex}></button>
+                <button className="button-card" key={optionIndex}>
+                  <h4>{option.name}</h4>
+                  <p>{option.caffeine}mg</p>
+                </button>
               })}
             </div>
     </>
