@@ -49,7 +49,7 @@ caffineLevel<statusLevels['moderate'].maxLevel?'moderate':'high'
     </StatCard>
 
     <StatCard title="Avg # of Coffees">
-      <p><span className="stat-text">{stats.average_coffees}</span>mg</p>
+      <p><span className="stat-text">{stats.average_coffees}</span></p>
     </StatCard>
 
     <StatCard title="Daily Cost(Rs)">
