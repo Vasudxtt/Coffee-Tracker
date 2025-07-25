@@ -18,6 +18,7 @@ export default function Stats() {
       <div className="stats-grid">
     <StatCard></StatCard>
     <StatCard></StatCard>
+    <StatCard></StatCard>
       </div>
     </>
   )
