@@ -1,7 +1,7 @@
 function StatCard(props){
   const{lg,title,children}=props
   return(
-    <div></div>
+    <div className={'card stat-card ' +}></div>
   )
 }
 
