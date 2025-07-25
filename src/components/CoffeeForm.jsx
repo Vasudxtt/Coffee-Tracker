@@ -13,6 +13,7 @@ const[showCoffeeTypes,setShowCoffeeTypes] = useState(false)
 const[coffeeCost,setCoffeeCost] = useState(0)
 // now we will set the hour
 const[hour,setHour] = useState(null)
+// now we will set the minutes
   return (
     <>
       <div className="section-header">
