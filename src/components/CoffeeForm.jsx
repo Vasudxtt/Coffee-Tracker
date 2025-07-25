@@ -12,7 +12,7 @@ export default function CoffeeForm() {
        <h4>Select coffee type</h4>
        {/* this div will have the 6 button of the drop down */}
             <div className="coffee-grid">
-              {coffeeOptions}
+              {coffeeOptions.slice(0,5).slicemap}
             </div>
     </>
   )
