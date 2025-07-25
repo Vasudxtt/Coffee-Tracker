@@ -15,6 +15,9 @@ const[coffeeCost,setCoffeeCost] = useState(0)
 const[hour,setHour] = useState(0)
 // now we will set the minutes
 const[min,setMin] = useState(0)
+
+// Now we will define a function here
+
   return (
     <>
       <div className="section-header">
