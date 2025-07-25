@@ -1,4 +1,4 @@
-import { calculateCurrentCaffeineLevel, coffeeConsumptionHistory } from "../utils"
+import { calculateCurrentCaffeineLevel, coffeeConsumptionHistory, statusLevels } from "../utils"
 
 function StatCard(props){
   const{lg,title,children}=props
@@ -36,6 +36,7 @@ const caffineLevel = calculateCurrentCaffeineLevel(coffeeConsumptionHistory)
     <StatCard lg title="Active Caffine Level">
       <div className="stats-grid">
         <p><span className="stat-text">{caffineLevel}</span>mg</p>
+        <h5 style={{color:statusLevels['low'].color,background}}>Low</h5>
       </div>
     </StatCard>
     <StatCard title="Daily Caffine"></StatCard>
