@@ -46,7 +46,7 @@ export default function CoffeeForm() {
           <select id="hours-select">
             {[1,2,3,4,5,6,7,8,9,10,11,12,131,4,15,16,17,18,19,20,21,22,23].map((hour,hourIndex)=>{
               return(
-                <option value={hour} id={hourIndex}></option>
+                <option value={hour} id={hourIndex}>{hour}</option>
               )
             })}
           </select>
