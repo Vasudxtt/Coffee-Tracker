@@ -25,7 +25,8 @@ const stats = {
 
 const caffineLevel = calculateCurrentCaffeineLevel(coffeeConsumptionHistory)
 
-const warningLevel = caffineLevel<statusLevels['low'].maxLevel?
+const warningLevel = caffineLevel<statusLevels['low'].maxLevel?'low':
+caffineLevel<statusLevels['moderate'].maxLevel?'moderate':'high'
 
   return (
     <>
