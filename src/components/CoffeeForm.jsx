@@ -21,7 +21,7 @@ const[showcoffeetypes,setShowcoffeeTypes] = useState(false)
       <div className="coffee-grid">
         {coffeeOptions.slice(0, 5).map((option, optionIndex) => {
           return(
-          <button onClick={()=>setCoffeeSelection(option.name)} className="button-card" key={optionIndex}>
+          <button onClick={()=>setCoffeeSelection(option.name)} className={"button-card" } key={optionIndex}>
             <h4>{option.name}</h4>
             <p>{option.caffeine}mg</p>
           </button>
