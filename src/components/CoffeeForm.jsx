@@ -12,7 +12,7 @@ const[showCoffeeTypes,setShowCoffeeTypes] = useState(false)
 // now we are setting up the cost
 const[coffeeCost,setCoffeeCost] = useState(0)
 // now we will set the hour
-
+const[hour,setHour] = useState(null)
   return (
     <>
       <div className="section-header">
