@@ -20,7 +20,7 @@ export default function Stats() {
     <StatCard lg title=""></StatCard>
     <StatCard title=""></StatCard>
     <StatCard title=""></StatCard>
-    <StatCard></StatCard>
+    <StatCard title=""></StatCard>
     <StatCard></StatCard>
       </div>
     </>
