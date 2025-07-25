@@ -5,8 +5,8 @@ import { coffeeOptions } from "../utils"
 
 export default function 
 CoffeeForm() {
-
-const[showcoffeetypes,setShowcoffeeTypes] = useState(false)
+// writing it false help us to tell that we dont want the user to see it until it clicks the other option
+const[showcoffeetypes,setShowcoffeeTypes] = useState(false) 
 
   return (
     <>
