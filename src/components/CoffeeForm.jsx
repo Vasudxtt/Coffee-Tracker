@@ -27,7 +27,7 @@ const[showcoffeetypes,setShowcoffeeTypes] = useState(false)
           </button>
           )
         })}
-        <button onClick={()=>setShowcoffeeTypes(true)} className={"button-card " + (option.name === selectedCoffee ? 'coffee-button-selected' : '')}>
+        <button onClick={()=>{setShowcoffeeTypes(true)}} className={"button-card " + (option.name === selectedCoffee ? 'coffee-button-selected' : '')}>
           <h4>Other</h4>
           <p>n/a</p>
         </button>
