@@ -6,7 +6,7 @@ import { coffeeOptions } from "../utils"
 export default function 
 CoffeeForm() {
   // now this usestate is for coffee selection and its gonna be null by default as yk we dont have any selection
-  const[coffeeSelection,setCoffeeSelection] = useState(null)
+  const[selectedCoffee,setSelectedCoffee] = useState(null)
 // writing it false help us to tell that we dont want the user to see it until it clicks the other option
 const[showcoffeetypes,setShowcoffeeTypes] = useState(false) 
 
@@ -21,7 +21,7 @@ const[showcoffeetypes,setShowcoffeeTypes] = useState(false)
       <div className="coffee-grid">
         {coffeeOptions.slice(0, 5).map((option, optionIndex) => {
           return(
-          <button onClick={()=>setCoffeeSelection(option.name)} className={"button-card" } key={optionIndex}>
+          <button onClick={()=>setSelectedCoffee(option.name)} className={"button-card" (option.name === selectedCoffee)} key={optionIndex}>
             <h4>{option.name}</h4>
             <p>{option.caffeine}mg</p>
           </button>
