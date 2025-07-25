@@ -4,8 +4,12 @@ export default function Layout(props){
   const header = (
     <header>
       <div>
-        <h1>CAFFIEND</h1>
+        <h1 className="text-gradient">CAFFIEND</h1>
+        <p>For Coffee Insatiates</p>
       </div>
+      <button>
+        <p>Sign Up Free</p>
+      </button>
     </header>
   )
 
