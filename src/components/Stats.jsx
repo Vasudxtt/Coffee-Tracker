@@ -45,7 +45,9 @@ const caffineLevel = calculateCurrentCaffeineLevel(coffeeConsumptionHistory)
       <p><span className="stat-text">{stats.daily_caffine}</span>mg</p>
     </StatCard>
 
-    <StatCard title="Avg # of Coffees"></StatCard>
+    <StatCard title="Avg # of Coffees">
+      <p><span className="stat-text">{stats.daily_caffine}</span>mg</p>
+    </StatCard>
 
     <StatCard title="Daily Cost(Rs)"></StatCard>
 
