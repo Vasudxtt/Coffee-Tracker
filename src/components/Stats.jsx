@@ -1,3 +1,5 @@
+import { calculateCurrentCaffeineLevel, coffeeConsumptionHistory } from "../utils"
+
 function StatCard(props){
   const{lg,title,children}=props
   return(
@@ -21,6 +23,7 @@ const stats = {
   total_cost:220
 }
 
+const caffineLevel = calculateCurrentCaffeineLevel(coffeeConsumptionHistory)
 
   return (
     <>
@@ -32,7 +35,7 @@ const stats = {
         {/* if we want we can write lg like this to as the value is been defined and if we write lg={true} then it is also fine */}
     <StatCard lg title="Active Caffine Level">
       <div className="stats-grid">
-        <p><span></span></p>
+        <p><span className="stat-text">{caffineLevel}</span>mg</p>
       </div>
     </StatCard>
     <StatCard title="Daily Caffine"></StatCard>
