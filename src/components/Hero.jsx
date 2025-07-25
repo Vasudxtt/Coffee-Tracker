@@ -5,6 +5,8 @@ export default function Hero(){
     <div className="benefits-list">
     <h3 className="font-bolder">Try<span className="text-gradient">Caffiend</span> and start...</h3>
     <p>✅Tracking Every Coffee</p>
+    <p>✅Measuring Your Blood Caffine Levels</p>
+    <p>✅Costing and Quantifying Your Addiction</p>
     </div>
     </>
   )
