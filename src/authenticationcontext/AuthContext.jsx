@@ -32,12 +32,14 @@ export function AuthProvider(props) {
     return signOut(auth)
   }
 
-  const value = { globalUser, globalData, setGlobalData, isLoading,signup,login,logout }
+  const value = { globalUser, globalData, setGlobalData, isLoading, signup, login, logout }
 
-  useEffect(()=>{
-    const unsubscribe = onAuthStateChanged(auth,async()=>{})
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      // if there's no user, empty the user state and return from this listener
+    })
     return unsubscribe
-  },[])
+  }, [])
 
   return (
     <AuthContext.Provider value={value}>
