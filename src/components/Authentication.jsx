@@ -10,6 +10,7 @@ export default function Authentication(){
     <hr />
     <div className="register-content">
     <p>Don&apos;t have an account</p>
+    <button><p>Sign Up</p></button>
     </div>
     </>
   )
