@@ -36,8 +36,8 @@ export default function Layout(props) {
 
   return (
     <>
-      {showModal && (<Modal handleCloseModal={() => { setShowModal(false) }}>
-        <Authentication handleCloseModal={() => { setShowModal(false) }} />
+      {showModal && (<Modal handleCloseModal={handleCloseModal}>
+        <Authentication handleCloseModal={handleCloseModal} />
       </Modal>)}
       {header}
       <main>
