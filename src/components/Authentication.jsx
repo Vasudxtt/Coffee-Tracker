@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { useAuth } from "../authenticationcontext/AuthContext"
 
-export default function Authentication() {
+export default function Authentication(props) {
+  const { handleCloseModal } = props
 
   const [isRegistration, setIsRegistration] = useState(false)
   const [email, setEmail] = useState('')
