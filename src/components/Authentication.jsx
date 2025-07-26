@@ -6,6 +6,8 @@ export default function Authentication(){
     <input type="email" placeholder="Email"/>
     <input type="password" placeholder="Password"/>
     <button><p>Submit</p></button>
+    <hr />
+
     </>
   )
 }
