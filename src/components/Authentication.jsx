@@ -15,7 +15,7 @@ export default function Authentication() {
   return (
     <>
       <h2 className="sign-up-text">{isRegistration ? 'Sign Up' : 'Login'}</h2>
-      <p>Welcome to Coffee Tracker! Please sign up or login to continue.</p>
+      {/* <p>Welcome to Coffee Tracker! Please sign up or login to continue.</p> */}
       <input value={email} onChange={(e) => { setEmail(e.target.value) }} type="email" placeholder="Email" />
       <input value={password} onChange={(e) => { setPassword(e.target.value) }} type="password" placeholder="Password" />
       <button onClick={handleAuthenticate}><p>Submit</p></button>
