@@ -2,6 +2,10 @@ import { createContext, useState,useEffect,useContext } from "react"
 
 const AuthContext = createContext()
 
+export function useAuth(){
+  return useContext(AuthContext)
+}
+
 export function AuthProvider(props){
   const {children} = props
 const[user,setUser] = useState(null)
