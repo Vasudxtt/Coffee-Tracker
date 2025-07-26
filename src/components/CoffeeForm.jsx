@@ -45,10 +45,10 @@ export default function
     const timeToSubtract = (hour * 60 * 60 * 1000) + (min * 60 * 100)
     // so this is the time when the coffee was consumed
     const timestamp = nowTime - timeToSubtract
-
-    // const newData = {
-    //   name: selectedCoffee,
-    //   cost: coffeeCost
+    const newData = {
+      name: selectedCoffee,
+      cost: coffeeCost
+    }
     // update the global state
 
 
