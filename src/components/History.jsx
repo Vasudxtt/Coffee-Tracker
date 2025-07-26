@@ -1,3 +1,5 @@
+import { coffeeConsumptionHistory } from "../utils";
+
 export default function History() {
   return (
     <>
@@ -7,7 +9,7 @@ export default function History() {
       </div>
        <p><i>Hover for more information!</i></p>
          <div className="coffee-history">
-          {Object.keys(globalData).sort((a, b) => b - a)}
+          {Object.keys(coffeeConsumptionHistory).sort((a, b) => b - a)}
          </div>
     </>
   )
