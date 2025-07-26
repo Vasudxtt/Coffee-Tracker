@@ -49,6 +49,13 @@ export function AuthProvider(props) {
         const docRef = doc(db, "users", user.uid)
         // this isused to take the snapshot of the current document
         const docSnap = await getDoc(docRef)
+        
+        // now we are intializing them as an empty object because if we dont get any information back then we gotta used it as an empty object
+      let firebaseData = {}
+      if(docSnap.exists){
+        console.log('found user data');
+        firebaseData = docSnap.data()
+      }    
       }catch(err){
         console.log(err.message);
       }finally{
