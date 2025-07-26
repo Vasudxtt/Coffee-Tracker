@@ -1,4 +1,4 @@
-import { coffeeConsumptionHistory } from "../utils";
+import { coffeeConsumptionHistory, timeSinceConsumption } from "../utils";
 
 export default function History() {
   return (
@@ -11,7 +11,7 @@ export default function History() {
       <div className="coffee-history">
         {Object.keys(coffeeConsumptionHistory).sort((a, b) => b - a).map((utcTime, coffeeIndex) => {
           const cofee = coffeeConsumptionHistory[utcTime]
-
+          const timeSinceConsume = timeSinceConsumption(utcTime)
 
 
           return (
