@@ -12,7 +12,7 @@ export default function Authentication() {
     <>
       <h2 className="sign-up-text">Sign Up / Login</h2>
       <p>Welcome to Coffee Tracker! Please sign up or login to continue.</p>
-      <input type="email" placeholder="Email" />
+      <input value={email} onChange={(e) => { setEmail(e.target.value) }} type="email" placeholder="Email" />
       <input type="password" placeholder="Password" />
       <button><p>Submit</p></button>
       {/* this is throwing a horizontal line to seprate it from the other */}
