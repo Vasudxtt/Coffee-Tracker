@@ -5,6 +5,7 @@ export default function History() {
         <i className="fa-solid fa-timeline" />
         <h2>History</h2>
       </div>
+       <p><i>Hover for more information!</i></p>
     </>
   )
 }
