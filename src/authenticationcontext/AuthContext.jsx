@@ -40,6 +40,14 @@ export function AuthProvider(props) {
 if (!user) {  return }
       // if there is a user, then check if the user has data in the database, and if they do, then fetch said data and update the global state
 
+      try{
+
+      }catch(err){
+
+      }finally{
+        
+      }
+
     })
     return unsubscribe
   }, [])
