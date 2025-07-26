@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { coffeeOptions } from "../utils"
+import Modal from "./Modal"
+import Authentication from "./Authentication"
 
 
 
