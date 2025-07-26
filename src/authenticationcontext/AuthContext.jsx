@@ -47,7 +47,7 @@ export function AuthProvider(props) {
         // this is giving the reference of the document so that the data is being accessed in the database
         const docRef = doc(db, "users", user.uid)
         // this isused to take the snapshot of the current document
-        const docSnap = await getDoc
+        const docSnap = await getDoc(docRef)
       }catch(err){
         console.log(err.message);
       }finally{
