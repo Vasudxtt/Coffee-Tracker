@@ -7,22 +7,22 @@ import Stats from "./components/Stats"
 
 
 function App() {
-const {globalUser,globalData} = useAuth()
-const isAuthenticated = globalUser
+  const { globalUser, globalData } = useAuth()
+  const isAuthenticated = globalUser
   const isData = globalData && !!Object.keys(globalData || {}).length
 
 
-const authenticatedContent = (
-  <>
-  <Stats/>
-  <History/>
-  </>
-)
+  const authenticatedContent = (
+    <>
+      <Stats />
+      <History />
+    </>
+  )
 
   return (
     <Layout>
-      <Hero/>
-      <CoffeeForm isAuthenticated={isAuthenticated}/>
+      <Hero />
+      <CoffeeForm isAuthenticated={isAuthenticated} />
       {isAuthenticated && (authenticatedContent)}
     </Layout>
   )
