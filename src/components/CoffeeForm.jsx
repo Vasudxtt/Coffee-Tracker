@@ -30,12 +30,12 @@ export default function
 
     // define a guard clause that only submits the form if it is completed
 
-      // then we're going to create a new data object
+    // then we're going to create a new data object
 
-         // update the global state
+    // update the global state
 
-         
-            // persist the data in the firebase firestore
+
+    // persist the data in the firebase firestore
     console.log(selectedCoffee, coffeeCost, hour, min);
 
   }
