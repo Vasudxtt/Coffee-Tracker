@@ -27,7 +27,7 @@ export default function Layout(props){
   )
   return(
     <>
-    {(<Modal>
+    {showModal && (<Modal>
       <Authentication />
     </Modal>)}
     {header}
