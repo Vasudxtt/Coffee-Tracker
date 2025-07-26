@@ -24,7 +24,7 @@ export default function
   // now we will set the minutes
   const [min, setMin] = useState(0)
 
-  const { globalData, setGlobalData } = useAuth()
+  const { globalData, setGlobalData , globalUser } = useAuth()
 
   // Now we will define a function here
   function handleSubmitForm() {
