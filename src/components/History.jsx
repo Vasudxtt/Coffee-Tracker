@@ -10,6 +10,10 @@ export default function History() {
       <p><i>Hover for more information!</i></p>
       <div className="coffee-history">
         {Object.keys(coffeeConsumptionHistory).sort((a, b) => b - a).map((utcTime, coffeeIndex) => {
+          const cofee = coffeeConsumptionHistory[utcTime]
+
+
+
           return (
             <div key={coffeeIndex}>
               <i className="fa-solid fa-mug-hot" />
