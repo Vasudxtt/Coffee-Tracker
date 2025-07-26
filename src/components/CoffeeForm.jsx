@@ -35,8 +35,8 @@ export default function
 
     // then we're going to create a new data object
     const newGlobalData = {
-// this is known as spreading out the existing global data inside this object 
-...globalData
+      // this is known as spreading out the existing global data inside this object 
+      ...globalData
     }
     // update the global state
 
