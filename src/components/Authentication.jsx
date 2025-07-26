@@ -7,14 +7,14 @@ export default function Authentication() {
   const [password, setPassword] = useState('')
   const [isAuthenticating, setIsAuthenticating] = useState(false)
 
-async function handleAuthenticate() {
-  
-}
+  async function handleAuthenticate() {
+
+  }
 
 
   return (
     <>
-       <h2 className="sign-up-text">{isRegistration ? 'Sign Up' : 'Login'}</h2>
+      <h2 className="sign-up-text">{isRegistration ? 'Sign Up' : 'Login'}</h2>
       <p>Welcome to Coffee Tracker! Please sign up or login to continue.</p>
       <input value={email} onChange={(e) => { setEmail(e.target.value) }} type="email" placeholder="Email" />
       <input value={password} onChange={(e) => { setPassword(e.target.value) }} type="password" placeholder="Password" />
@@ -23,7 +23,7 @@ async function handleAuthenticate() {
       <hr />
       <div className="register-content">
         <p>Don&apos;t have an account</p>
-        <button><p>Sign Up</p></button>
+        <button onClick={() => { setIsRegistration(!isRegistration) }}><p>{isRegistration ? 'Sign in' : 'Sign up'}</p></button>
       </div>
     </>
   )
