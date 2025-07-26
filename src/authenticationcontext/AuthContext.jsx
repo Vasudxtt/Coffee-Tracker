@@ -6,7 +6,7 @@ export function AuthProvider(props){
   const {children} = props
 const[user,setUser] = useState(null)
 
-const value = {}
+const value = {user}
 
 return(
   <AuthContext.Provider value={value}>
