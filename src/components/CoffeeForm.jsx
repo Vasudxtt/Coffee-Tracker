@@ -27,6 +27,8 @@ export default function
       setShowModal(true)
       return
     }
+
+    // define a guard clause that only submits the form if it is completed
     console.log(selectedCoffee, coffeeCost, hour, min);
 
   }
