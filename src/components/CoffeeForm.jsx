@@ -31,9 +31,9 @@ export default function
 
   }
 
-function handleCloseModal() {
-        setShowModal(false)
-    }
+  function handleCloseModal() {
+    setShowModal(false)
+  }
 
   return (
     <>
