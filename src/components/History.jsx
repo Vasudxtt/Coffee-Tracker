@@ -6,6 +6,7 @@ export default function History() {
         <h2>History</h2>
       </div>
        <p><i>Hover for more information!</i></p>
+         <div className="coffee-history"></div>
     </>
   )
 }
