@@ -1,4 +1,4 @@
-import { coffeeConsumptionHistory, getCaffeineAmount, timeSinceConsumption } from "../utils";
+import { calculateCurrentCaffeineLevel, coffeeConsumptionHistory, getCaffeineAmount, timeSinceConsumption } from "../utils";
 
 export default function History() {
   return (
@@ -13,6 +13,7 @@ export default function History() {
           const cofee = coffeeConsumptionHistory[utcTime]
           const timeSinceConsume = timeSinceConsumption(utcTime)
           const orginalAmount = getCaffeineAmount(cofee.name)
+          const remainingAmount = calculateCurrentCaffeineLevel
 
 
           return (
