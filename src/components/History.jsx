@@ -9,7 +9,11 @@ export default function History() {
       </div>
        <p><i>Hover for more information!</i></p>
          <div className="coffee-history">
-          {Object.keys(coffeeConsumptionHistory).sort((a, b) => b - a)}
+          {Object.keys(coffeeConsumptionHistory).sort((a, b) => b - a).map((utcTime,coffeeIndex)=>{
+            return(
+              
+            )
+          })}
          </div>
     </>
   )
