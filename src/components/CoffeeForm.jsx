@@ -63,10 +63,10 @@ export default function
         [timestamp]: newData
       }, { merge: true })
 
-        setSelectedCoffee(null)
-            setHour(0)
-            setMin(0)
-            setCoffeeCost(0)
+      setSelectedCoffee(null)
+      setHour(0)
+      setMin(0)
+      setCoffeeCost(0)
     }
 
   function handleCloseModal() {
