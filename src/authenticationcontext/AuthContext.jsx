@@ -42,8 +42,7 @@ export function AuthProvider(props) {
       // if there is a user, then check if the user has data in the database, and if they do, then fetch said data and update the global state
 
       try{
-        const data = await getUserData(user.uid)
-        setGlobalData(data)
+        setIsLoading(true)
       }catch(err){
         console.log(err.message);
       }finally{
