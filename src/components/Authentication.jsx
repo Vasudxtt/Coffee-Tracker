@@ -24,7 +24,6 @@ export default function Authentication() {
       handleCloseModal()
     } catch (err) {
       console.log(err.message)
-      setError(err.message)
     } finally {
       setIsAuthenticating(false)
     }
