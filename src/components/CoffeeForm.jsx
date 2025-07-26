@@ -4,6 +4,7 @@ import Modal from "./Modal"
 import Authentication from "./Authentication"
 import { useAuth } from "../authenticationcontext/AuthContext"
 import { doc } from "firebase/firestore"
+import { db } from "../../firebase"
 
 
 
@@ -57,7 +58,7 @@ export default function
     setGlobalData(newGlobalData)
 
     // persist the data in the firebase firestore
-    const userRef = doc
+    const userRef = doc(db)
 
   }
 
