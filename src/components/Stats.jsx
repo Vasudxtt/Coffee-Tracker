@@ -1,3 +1,4 @@
+import { useAuth } from "../authenticationcontext/AuthContext"
 import { calculateCoffeeStats, calculateCurrentCaffeineLevel, coffeeConsumptionHistory, getTopThreeCoffees, statusLevels } from "../utils"
 
 function StatCard(props){
@@ -22,7 +23,7 @@ export default function Stats() {
 //   average_coffees:2.3,
 //   total_cost:220
 // }
-
+const {globalData} = useAuth()
 const stats = calculateCoffeeStats(coffeeConsumptionHistory)
 
 const caffineLevel = calculateCurrentCaffeineLevel(coffeeConsumptionHistory)
