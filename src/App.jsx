@@ -8,7 +8,7 @@ import Stats from "./components/Stats"
 
 function App() {
 const {globalUser,globalData} = useAuth()
-const isAuthenticated = false
+const isAuthenticated = globalUser
 
 const authenticatedContent = (
   <>
