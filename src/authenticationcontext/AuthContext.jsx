@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth"
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth"
 import { createContext, useState, useEffect, useContext } from "react"
 import { auth } from "../../firebase"
 // intializing the context
@@ -21,6 +21,13 @@ export function AuthProvider(props) {
   function login(email, password) {
     return signInWithEmailAndPassword(auth, email, password)
   }
+
+  
+    function logout() {
+        setUser(null)
+        setGlobalData(null)
+        return signOut(auth)
+    }
 
   const value = { user, globalData, setGlobalData, isLoading }
 
