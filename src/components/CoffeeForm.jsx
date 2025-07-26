@@ -2,6 +2,7 @@ import { useState } from "react"
 import { coffeeOptions } from "../utils"
 import Modal from "./Modal"
 import Authentication from "./Authentication"
+import { useAuth } from "../authenticationcontext/AuthContext"
 
 
 
@@ -20,6 +21,8 @@ export default function
   const [hour, setHour] = useState(0)
   // now we will set the minutes
   const [min, setMin] = useState(0)
+
+  const { globalData } = useAuth()
 
   // Now we will define a function here
   function handleSubmitForm() {
