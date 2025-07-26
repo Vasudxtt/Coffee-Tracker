@@ -33,7 +33,7 @@ export default function
   return (
     <>
 
-      {showModal && (<Modal handleCloseModal={() => { useShowModal(false) }}>
+      {showModal && (<Modal handleCloseModal={() => { setShowModal(false) }}>
         <Authentication />
       </Modal>)}
 
