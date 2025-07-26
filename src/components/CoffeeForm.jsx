@@ -37,7 +37,7 @@ export default function
     if (!selectedCoffee) {
       return
     }
-
+ try{
     // then we're going to create a new data object
     const newGlobalData = {
       // this is known as spreading out the existing global data inside this object and we wrap it up in () just if the global data is empty sp provide a backup of the empty data i.e null 
