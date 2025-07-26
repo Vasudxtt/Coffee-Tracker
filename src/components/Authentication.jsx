@@ -15,7 +15,7 @@ export default function Authentication(props) {
     if (!email || !email.includes('@') || !password || password.length < 6 || isAuthenticating) { return }
     try {
       setIsAuthenticating(true)
-       setError(null)
+      setError(null)
       if (isRegistration) {
         // register a user
         await signup(email, password)
@@ -39,8 +39,8 @@ export default function Authentication(props) {
       {/* <p>Welcome to Coffee Tracker! Please sign up or login to continue.</p> */}
       <p>{isRegistration ? 'Create an account!' : 'Sign in to your account!'}</p>
       {error && (
-                <p>❌ {error}</p>
-            )}
+        <p>❌ {error}</p>
+      )}
       <input value={email} onChange={(e) => { setEmail(e.target.value) }} type="email" placeholder="Email" />
       <input value={password} onChange={(e) => { setPassword(e.target.value) }} type="password" placeholder="Password" />
       <button onClick={handleAuthenticate}><p>{isAuthenticating ? 'Authenticating...' : 'Submit'}</p></button>
