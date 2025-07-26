@@ -11,7 +11,7 @@ export function AuthProvider(props){
 const[user,setUser] = useState(null)
 const[globalData,setGlobalData] = useState(null)
 const[isLoading,setIsLoading] = useState(false)
-const value = {user,globalData}
+const value = {user,globalData,setGlobalData}
 
 return(
   <AuthContext.Provider value={value}>
