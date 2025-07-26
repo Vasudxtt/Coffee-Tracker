@@ -28,7 +28,7 @@ export function AuthProvider(props) {
   }
 
   function logout() {
-    setUser(null)
+    setGlobalUser(null)
     setGlobalData(null)
     return signOut(auth)
   }
