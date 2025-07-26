@@ -1,6 +1,7 @@
 import { createUserWithEmailAndPassword, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signOut } from "firebase/auth"
 import { createContext, useState, useEffect, useContext } from "react"
-import { auth } from "../../firebase"
+import { auth, db } from "../../firebase"
+import { doc } from "firebase/firestore"
 // intializing the context
 const AuthContext = createContext()
 // creating a custom hook
@@ -43,6 +44,8 @@ export function AuthProvider(props) {
 
       try{
         setIsLoading(true)
+
+        const docRef = doc(db, "users", user.uid)
       }catch(err){
         console.log(err.message);
       }finally{
