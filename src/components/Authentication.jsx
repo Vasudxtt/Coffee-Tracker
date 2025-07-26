@@ -37,7 +37,7 @@ export default function Authentication() {
       <p>{isRegistration ? 'Create an account!' : 'Sign in to your account!'}</p>
       <input value={email} onChange={(e) => { setEmail(e.target.value) }} type="email" placeholder="Email" />
       <input value={password} onChange={(e) => { setPassword(e.target.value) }} type="password" placeholder="Password" />
-      <button onClick={handleAuthenticate}><p>Submit</p></button>
+      <button onClick={handleAuthenticate}><p>{isAuthenticating ? 'Authenticating...' : 'Submit'}</p></button>
       {/* this is throwing a horizontal line to seprate it from the other */}
       <hr />
       <div className="register-content">
