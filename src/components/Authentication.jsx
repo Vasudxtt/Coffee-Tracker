@@ -5,6 +5,7 @@ export default function Authentication(){
     <p>Welcome to Coffee Tracker! Please sign up or login to continue.</p>
     <input type="email" placeholder="Email"/>
     <input type="password" placeholder="Password"/>
+    <button><p>Submit</p></button>
     </>
   )
 }
