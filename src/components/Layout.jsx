@@ -30,6 +30,10 @@ export default function Layout(props){
       <p><span className="text-gradient">Caffiend</span> was made by <a target="_blank" href="https://www.vasuduttpareek.com">Vasudutt Pareek</a> <br />Using the <a href="https://www.fantacss.smoljames.com" target="_blank">FantaCSS</a> design library.<br />Check out the project on <a target="_black" href="https://github.com/Vasudxtt/Coffee-Tracker">GitHub</a>!</p>
     </footer>
   )
+function handleCloseModal() {
+        setShowModal(false)
+    }
+
   return(
     <>
     {showModal && (<Modal handleCloseModal={()=>{setShowModal(false)}}>
