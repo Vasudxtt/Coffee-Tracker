@@ -11,7 +11,9 @@ export default function History() {
          <div className="coffee-history">
           {Object.keys(coffeeConsumptionHistory).sort((a, b) => b - a).map((utcTime,coffeeIndex)=>{
             return(
-              
+               <div title={summary} key={coffeeIndex}>
+                            <i className="fa-solid fa-mug-hot" />
+                        </div>
             )
           })}
          </div>
