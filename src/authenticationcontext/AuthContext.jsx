@@ -5,6 +5,9 @@ const AuthContext = createContext()
 export function AuthProvider(props){
   const {children} = props
 
+
+const value = {}
+
 return(
   <AuthContext.Provider>
     {children}
