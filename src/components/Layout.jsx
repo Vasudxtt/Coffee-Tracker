@@ -4,6 +4,8 @@ import Modal from "./Modal"
 export default function Layout(props){
   const {children} = props
 
+  const[showModal,useShowModal] = useState(false)
+
   const header = (
     <header>
       <div>
