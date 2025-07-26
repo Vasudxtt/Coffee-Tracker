@@ -11,7 +11,7 @@ export default function History() {
       </div>
       <p><i>Hover for more information!</i></p>
       <div className="coffee-history">
-        {Object.keys(coffeeConsumptionHistory).sort((a, b) => b - a).map((utcTime, coffeeIndex) => {
+        {Object.keys(globalData).sort((a, b) => b - a).map((utcTime, coffeeIndex) => {
           const coffee = coffeeConsumptionHistory[utcTime]
           const timeSinceConsume = timeSinceConsumption(utcTime)
           const originalAmount = getCaffeineAmount(coffee.name)
