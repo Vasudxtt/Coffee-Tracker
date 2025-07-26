@@ -1,6 +1,8 @@
+import { useAuth } from "../authenticationcontext/AuthContext";
 import { calculateCurrentCaffeineLevel, coffeeConsumptionHistory, getCaffeineAmount, timeSinceConsumption } from "../utils";
 
 export default function History() {
+  const {globalData} = useAuth()
   return (
     <>
       <div className="section-header">
