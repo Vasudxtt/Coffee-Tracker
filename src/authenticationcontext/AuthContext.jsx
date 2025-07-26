@@ -45,7 +45,7 @@ export function AuthProvider(props) {
         const data = await getUserData(user.uid)
         setGlobalData(data)
       }catch(err){
-
+        console.log(err.message);
       }finally{
 
       }
