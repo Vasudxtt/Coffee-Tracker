@@ -22,7 +22,7 @@ export default function Authentication() {
       {/* this is throwing a horizontal line to seprate it from the other */}
       <hr />
       <div className="register-content">
-        <p>Don&apos;t have an account</p>
+        <p>{isRegistration ? 'Already have an account?' : 'Don\'t have an account?'}</p>
         <button onClick={() => { setIsRegistration(!isRegistration) }}><p>{isRegistration ? 'Sign in' : 'Sign up'}</p></button>
       </div>
     </>
