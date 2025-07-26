@@ -13,7 +13,7 @@ export function AuthProvider(props) {
   const [user, setUser] = useState(null)
   const [globalData, setGlobalData] = useState(null)
   const [isLoading, setIsLoading] = useState(false)
-  
+
   function signup(email, password) {
     return createUserWithEmailAndPassword(auth, email, password)
   }
@@ -22,7 +22,7 @@ export function AuthProvider(props) {
     return signInWithEmailAndPassword(auth, email, password)
   }
 
-const value = { user, globalData, setGlobalData, isLoading }
+  const value = { user, globalData, setGlobalData, isLoading }
 
 
   return (
