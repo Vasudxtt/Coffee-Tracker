@@ -26,7 +26,7 @@ export default function Stats() {
 const {globalData} = useAuth()
 const stats = calculateCoffeeStats(globalData)
 
-const caffineLevel = calculateCurrentCaffeineLevel(coffeeConsumptionHistory)
+const caffineLevel = calculateCurrentCaffeineLevel(globalData)
 
 const warningLevel = caffineLevel<statusLevels['low'].maxLevel?'low':
 caffineLevel<statusLevels['moderate'].maxLevel?'moderate':'high'
