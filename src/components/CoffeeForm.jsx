@@ -49,6 +49,8 @@ export default function
       name: selectedCoffee,
       cost: coffeeCost
     }
+      newGlobalData[timestamp] = newData
+            console.log(timestamp, selectedCoffee, coffeeCost)
     // update the global state
     setGlobalData(newGlobalData)
 
