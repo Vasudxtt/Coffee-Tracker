@@ -6,7 +6,9 @@ export function AuthProvider(props){
   const {children} = props
 
 return(
-  
+  <AuthContext.Provider>
+    {children}
+  </AuthContext.Provider>
 )
 
 }
