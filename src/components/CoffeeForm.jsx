@@ -3,7 +3,7 @@ import { coffeeOptions } from "../utils"
 import Modal from "./Modal"
 import Authentication from "./Authentication"
 import { useAuth } from "../authenticationcontext/AuthContext"
-import { doc } from "firebase/firestore"
+import { doc, setDoc } from "firebase/firestore"
 import { db } from "../../firebase"
 
 
@@ -59,7 +59,7 @@ export default function
 
     // persist the data in the firebase firestore
     const userRef = doc(db, "users", globalUser.uid)
-
+    const res = await setDoc
   }
 
   function handleCloseModal() {
