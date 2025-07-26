@@ -8,7 +8,7 @@ export default function Layout(props){
 
   const[showModal,setShowModal] = useState(false)
 
-  const {globalUse , logout} = useAuth()
+  const {globalUser , logout} = useAuth()
 
   const header = (
     <header>
