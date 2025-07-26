@@ -45,6 +45,7 @@ export function AuthProvider(props) {
       try{
         setIsLoading(true)
         // this is giving the reference of the document so that the data is being accessed in the database
+        // first we create a reference for the document (labelled json object), and then we get the doc, and then we snapshot it to see if there's anything there
         const docRef = doc(db, "users", user.uid)
         // this isused to take the snapshot of the current document
         const docSnap = await getDoc(docRef)
