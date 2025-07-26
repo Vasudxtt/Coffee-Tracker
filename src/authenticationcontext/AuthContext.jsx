@@ -22,6 +22,9 @@ export function AuthProvider(props) {
     return signInWithEmailAndPassword(auth, email, password)
   }
 
+  function resetPassword(email) {
+    return sendPasswordResetEmail(auth, email)
+  }
 
   function logout() {
     setUser(null)
