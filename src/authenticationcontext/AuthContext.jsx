@@ -10,7 +10,7 @@ export function useAuth() {
 
 export function AuthProvider(props) {
   const { children } = props
-  const [user, setUser] = useState(null)
+  const [globalUser, setGlobalUser] = useState(null)
   const [globalData, setGlobalData] = useState(null)
   const [isLoading, setIsLoading] = useState(false)
 
