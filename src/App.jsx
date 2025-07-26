@@ -1,3 +1,4 @@
+import { useAuth } from "./authenticationcontext/AuthContext"
 import CoffeeForm from "./components/CoffeeForm"
 import Hero from "./components/Hero"
 import History from "./components/History"
@@ -6,7 +7,7 @@ import Stats from "./components/Stats"
 
 
 function App() {
-
+const {globalUser,globalData} = useAuth()
 const isAuthenticated = false
 
 const authenticatedContent = (
