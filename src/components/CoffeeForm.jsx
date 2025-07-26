@@ -6,6 +6,8 @@ import { coffeeOptions } from "../utils"
 export default function 
 CoffeeForm(props) {
   const {isAuthenticated} = props
+
+  const [setModal,useShowModal] = useState(false)
   // now this usestate is for coffee selection and its gonna be null by default as yk we dont have any selection
   const[selectedCoffee,setSelectedCoffee] = useState(null)
 // writing it false help us to tell that we dont want the user to see it until it clicks the other option
