@@ -61,7 +61,7 @@ export default function
     const userRef = doc(db, "users", globalUser.uid)
     const res = await setDoc(userRef,{
       [timestamp]: newData
-    })
+    },{merge: true})
   }
 
   function handleCloseModal() {
