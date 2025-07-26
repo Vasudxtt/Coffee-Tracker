@@ -32,7 +32,7 @@ export function AuthProvider(props) {
     return signOut(auth)
   }
 
-  const value = { user, globalData, setGlobalData, isLoading }
+  const value = { user, globalData, setGlobalData, isLoading,signup,login,logout }
 
 
   return (
