@@ -6,8 +6,8 @@ export default function Authentication(){
     <input type="email" placeholder="Email"/>
     <input type="password" placeholder="Password"/>
     <button><p>Submit</p></button>
+     {/* this is throwing a horizontal line to seprate it from the other */}
     <hr />
-
     </>
   )
 }
