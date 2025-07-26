@@ -7,6 +7,10 @@ export default function Authentication() {
   const [password, setPassword] = useState('')
   const [isAuthenticating, setIsAuthenticating] = useState(false)
 
+async function handleAuthenticate() {
+  
+}
+
 
   return (
     <>
