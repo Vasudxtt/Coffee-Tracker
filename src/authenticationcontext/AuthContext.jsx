@@ -38,28 +38,31 @@ export function AuthProvider(props) {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       // if there's no user, empty the user state and return from this listener
-      
-      if (!user) {  return }
+
+      if (!user) {
+        console.log('No active user')
+        return
+      }
       // if there is a user, then check if the user has data in the database, and if they do, then fetch said data and update the global state
 
-      try{
+      try {
         setIsLoading(true)
         // this is giving the reference of the document so that the data is being accessed in the database
         // first we create a reference for the document (labelled json object), and then we get the doc, and then we snapshot it to see if there's anything there
         const docRef = doc(db, "users", user.uid)
         // this isused to take the snapshot of the current document
         const docSnap = await getDoc(docRef)
-        
+
         // now we are intializing them as an empty object because if we dont get any information back then we gotta used it as an empty object
-      let firebaseData = {}
-      if(docSnap.exists){
-        console.log('found user data');
-        firebaseData = docSnap.data()
-      }
-      setGlobalData(firebaseData)
-      }catch(err){
+        let firebaseData = {}
+        if (docSnap.exists) {
+          console.log('found user data');
+          firebaseData = docSnap.data()
+        }
+        setGlobalData(firebaseData)
+      } catch (err) {
         console.log(err.message);
-      }finally{
+      } finally {
         setIsLoading(false)
       }
 
