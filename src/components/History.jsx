@@ -17,8 +17,7 @@ export default function History() {
             [utcTime]:coffee
           })
 
-          const summary = `${coffee.name} | ${timeSinceConsume} ago | ${orginalAmount}mg / ${remainingAmount}`
-
+          const summary =`${coffee.name} | ${timeSinceConsume} | Rs${coffee.cost} | ${remainingAmount}mg / ${originalAmount}mg`
 
           return (
             <div key={coffeeIndex}>
