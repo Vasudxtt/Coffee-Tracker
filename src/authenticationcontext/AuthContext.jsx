@@ -10,7 +10,7 @@ export function AuthProvider(props){
   const {children} = props
 const[user,setUser] = useState(null)
 const[globalData,setGlobalData] = useState(null)
-const[loading,setLoading] = useState(true)
+const[isLoading,setIsLoading] = useState(true)
 const value = {user}
 
 return(
