@@ -50,7 +50,7 @@ export default function
       cost: coffeeCost
     }
     // update the global state
-
+    setGlobalData(newGlobalData)
 
     // persist the data in the firebase firestore
     console.log(selectedCoffee, coffeeCost, hour, min);
