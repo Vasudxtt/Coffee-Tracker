@@ -5,7 +5,7 @@ import Modal from "./Modal"
 export default function Layout(props){
   const {children} = props
 
-  const[showModal,useShowModal] = useState(false)
+  const[showModal,setShowModal] = useState(false)
 
   const header = (
     <header>
@@ -13,7 +13,7 @@ export default function Layout(props){
         <h1 className="text-gradient">CAFFIEND</h1>
         <p>For Coffee Insatiates</p>
       </div>
-      <button onClick={()=>{useShowModal(true)}}>
+      <button onClick={()=>{setShowModal(true)}}>
         <p>Sign Up Free</p>
          <i className="fa-solid fa-mug-hot"></i>
       </button>
@@ -27,8 +27,8 @@ export default function Layout(props){
   )
   return(
     <>
-    {showModal && (<Modal handleCloseModal={()=>{useShowModal(false)}}>
-      <Authentication />
+    {showModal && (<Modal handleCloseModal={()=>{setShowModal(false)}}>
+      <Authentication handleCloseModal={() => { setShowModal(false) }} />
     </Modal>)}
     {header}
     <main>
