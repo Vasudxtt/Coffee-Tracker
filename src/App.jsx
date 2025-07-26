@@ -23,7 +23,10 @@ function App() {
     <Layout>
       <Hero />
       <CoffeeForm isAuthenticated={isAuthenticated} />
-      {isAuthenticated && (authenticatedContent)}
+      {(isAuthenticated && isLoading) && (
+        <p>Loading data...</p>
+      )}
+      {(isAuthenticated && isData) && (authenticatedContent)}
     </Layout>
   )
 }
