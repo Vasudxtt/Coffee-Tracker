@@ -9,7 +9,7 @@ export function AuthProvider(props){
 const value = {}
 
 return(
-  <AuthContext.Provider>
+  <AuthContext.Provider value={value}>
     {children}
   </AuthContext.Provider>
 )
