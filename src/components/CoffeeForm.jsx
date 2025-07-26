@@ -7,7 +7,7 @@ export default function
 CoffeeForm(props) {
   const {isAuthenticated} = props
 
-  const [setModal,useShowModal] = useState(false)
+  const [showModal,useShowModal] = useState(false)
   // now this usestate is for coffee selection and its gonna be null by default as yk we dont have any selection
   const[selectedCoffee,setSelectedCoffee] = useState(null)
 // writing it false help us to tell that we dont want the user to see it until it clicks the other option
@@ -30,6 +30,11 @@ console.log(selectedCoffee,coffeeCost,hour,min);
 }
   return (
     <>
+
+ {showModal && (<Modal handleCloseModal={()=>{useShowModal(false)}}>
+      <Authentication />
+    </Modal>)}
+
       <div className="section-header">
         <i className="fa-solid fa-pencil" />
         <h2>Start Tracking Today</h2>
