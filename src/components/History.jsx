@@ -1,4 +1,4 @@
-import { coffeeConsumptionHistory, timeSinceConsumption } from "../utils";
+import { coffeeConsumptionHistory, getCaffeineAmount, timeSinceConsumption } from "../utils";
 
 export default function History() {
   return (
@@ -12,6 +12,7 @@ export default function History() {
         {Object.keys(coffeeConsumptionHistory).sort((a, b) => b - a).map((utcTime, coffeeIndex) => {
           const cofee = coffeeConsumptionHistory[utcTime]
           const timeSinceConsume = timeSinceConsumption(utcTime)
+          const orginalAmount = getCaffeineAmount(cofee.name)
 
 
           return (
