@@ -29,6 +29,8 @@ export default function
     }
 
     // define a guard clause that only submits the form if it is completed
+
+      // then we're going to create a new data object
     console.log(selectedCoffee, coffeeCost, hour, min);
 
   }
