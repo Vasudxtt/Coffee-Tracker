@@ -41,8 +41,8 @@ export default function Authentication(props) {
       {error && (
         <p>❌ {error}</p>
       )}
-      <input value={email} onChange={(e) => { setEmail(e.target.value) }} type="email" placeholder="Email" />
-      <input value={password} onChange={(e) => { setPassword(e.target.value) }} type="password" placeholder="Password" />
+      <input value={email} onChange={(e) => { setEmail(e.target.value) }} type="email" placeholder="Enter Your Email" />
+      <input value={password} onChange={(e) => { setPassword(e.target.value) }} type="password" placeholder="Enter Your Password" />
       <button onClick={handleAuthenticate}><p>{isAuthenticating ? 'Authenticating...' : 'Submit'}</p></button>
       {/* this is throwing a horizontal line to seprate it from the other */}
       <hr />
