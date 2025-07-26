@@ -30,11 +30,12 @@ export default function
 
     // define a guard clause that only submits the form if it is completed
     if (!selectedCoffee) {
-            return
-        }
+      return
+    }
 
     // then we're going to create a new data object
-
+    const newGlobalData = {}
+// this is known as spreading out the existing global data inside this object 
     // update the global state
 
 
