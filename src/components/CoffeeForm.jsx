@@ -3,6 +3,7 @@ import { coffeeOptions } from "../utils"
 import Modal from "./Modal"
 import Authentication from "./Authentication"
 import { useAuth } from "../authenticationcontext/AuthContext"
+import { doc } from "firebase/firestore"
 
 
 
@@ -51,11 +52,12 @@ export default function
     }
     newGlobalData[timestamp] = newData
     console.log(timestamp, selectedCoffee, coffeeCost)
+
     // update the global state
     setGlobalData(newGlobalData)
 
     // persist the data in the firebase firestore
-    console.log(selectedCoffee, coffeeCost, hour, min);
+    const userRef = doc
 
   }
 
