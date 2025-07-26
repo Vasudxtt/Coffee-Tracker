@@ -1,4 +1,8 @@
 export default function Authentication(){
+
+ const [isRegistration, setIsRegistration] = useState(false)
+
+
   return(
     <>
     <h2 className="sign-up-text">Sign Up / Login</h2>
