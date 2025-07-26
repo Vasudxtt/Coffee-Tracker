@@ -15,7 +15,7 @@ export default function Authentication(props) {
     if (!email || !email.includes('@') || !password || password.length < 6 || isAuthenticating) { return }
     try {
       setIsAuthenticating(true)
-
+       setError(null)
       if (isRegistration) {
         // register a user
         await signup(email, password)
