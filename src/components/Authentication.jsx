@@ -8,6 +8,9 @@ export default function Authentication(){
     <button><p>Submit</p></button>
      {/* this is throwing a horizontal line to seprate it from the other */}
     <hr />
+    <div className="register-content">
+    <p>Don&apos;t have an account</p>
+    </div>
     </>
   )
 }
