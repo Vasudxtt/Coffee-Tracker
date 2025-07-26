@@ -58,7 +58,7 @@ export default function
     setGlobalData(newGlobalData)
 
     // persist the data in the firebase firestore
-    const userRef = doc(db)
+    const userRef = doc(db, "users", globalUser.uid)
 
   }
 
