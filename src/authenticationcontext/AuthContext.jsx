@@ -46,7 +46,7 @@ export function AuthProvider(props) {
       }catch(err){
         console.log(err.message);
       }finally{
-
+        setIsLoading(false)
       }
 
     })
