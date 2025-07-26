@@ -20,7 +20,7 @@ export default function History() {
           const summary =`${coffee.name} | ${timeSinceConsume} | Rs${coffee.cost} | ${remainingAmount}mg / ${originalAmount}mg`
 
           return (
-            <div key={coffeeIndex}>
+            <div title={summary} key={coffeeIndex}>
               <i className="fa-solid fa-mug-hot" />
             </div>
           )
