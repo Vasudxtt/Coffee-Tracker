@@ -30,6 +30,11 @@ export default function
     console.log(selectedCoffee, coffeeCost, hour, min);
 
   }
+
+function handleCloseModal() {
+        setShowModal(false)
+    }
+
   return (
     <>
 
