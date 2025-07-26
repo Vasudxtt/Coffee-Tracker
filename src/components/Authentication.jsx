@@ -3,6 +3,9 @@ import { useState } from "react"
 export default function Authentication(){
 
  const [isRegistration, setIsRegistration] = useState(false)
+ const [email, setEmail] = useState('')
+    // const [password, setPassword] = useState('')
+    // const [isAuthenticating, setIsAuthenticating] = useState(false)
 
 
   return(
