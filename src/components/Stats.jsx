@@ -24,7 +24,7 @@ export default function Stats() {
 //   total_cost:220
 // }
 const {globalData} = useAuth()
-const stats = calculateCoffeeStats(coffeeConsumptionHistory)
+const stats = calculateCoffeeStats(globalData)
 
 const caffineLevel = calculateCurrentCaffeineLevel(coffeeConsumptionHistory)
 
