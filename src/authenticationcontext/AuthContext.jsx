@@ -37,7 +37,7 @@ export function AuthProvider(props) {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       // if there's no user, empty the user state and return from this listener
-
+if (!user) {  return }
       // if there is a user, then check if the user has data in the database, and if they do, then fetch said data and update the global state
 
     })
