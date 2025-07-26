@@ -1,7 +1,7 @@
 import { createUserWithEmailAndPassword, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signOut } from "firebase/auth"
 import { createContext, useState, useEffect, useContext } from "react"
 import { auth, db } from "../../firebase"
-import { doc } from "firebase/firestore"
+import { doc, getDoc } from "firebase/firestore"
 // intializing the context
 const AuthContext = createContext()
 // creating a custom hook
@@ -46,6 +46,8 @@ export function AuthProvider(props) {
         setIsLoading(true)
         // this is giving the reference of the document so that the data is being accessed in the database
         const docRef = doc(db, "users", user.uid)
+        // this isused to take the snapshot of the current document
+        const docSnap = await getDoc
       }catch(err){
         console.log(err.message);
       }finally{
