@@ -11,6 +11,24 @@ export default function Authentication() {
 
   async function handleAuthenticate() {
     if (!email || !email.includes('@') || !password || password.length < 6 || isAuthenticating) { return }
+    try {
+      setIsAuthenticating(true)
+      setError(null)
+
+      if (isRegistration) {
+        // register a user
+        await signup(email, password)
+      } else {
+        // login a user
+        await login(email, password)
+      }
+      handleCloseModal()
+    } catch (err) {
+      console.log(err.message)
+      setError(err.message)
+    } finally {
+      setIsAuthenticating(false)
+    }
   }
 
 
