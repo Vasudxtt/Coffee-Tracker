@@ -59,7 +59,9 @@ export default function
 
     // persist the data in the firebase firestore
     const userRef = doc(db, "users", globalUser.uid)
-    const res = await setDoc(userRef)
+    const res = await setDoc(userRef,{
+      [timestamp]: newData
+    })
   }
 
   function handleCloseModal() {
