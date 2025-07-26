@@ -19,7 +19,7 @@ const[min,setMin] = useState(0)
 
 // Now we will define a function here
 function handleSubmitForm(){
-  if(){}
+  if(!isAuthenticated){}
 console.log(selectedCoffee,coffeeCost,hour,min);
 
 }
