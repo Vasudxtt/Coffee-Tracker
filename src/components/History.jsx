@@ -13,7 +13,7 @@ export default function History() {
           const cofee = coffeeConsumptionHistory[utcTime]
           const timeSinceConsume = timeSinceConsumption(utcTime)
           const orginalAmount = getCaffeineAmount(cofee.name)
-          const remainingAmount = calculateCurrentCaffeineLevel
+          const remainingAmount = calculateCurrentCaffeineLevel({})
 
 
           return (
