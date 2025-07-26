@@ -33,6 +33,9 @@ export default function
       // then we're going to create a new data object
 
          // update the global state
+
+         
+            // persist the data in the firebase firestore
     console.log(selectedCoffee, coffeeCost, hour, min);
 
   }
