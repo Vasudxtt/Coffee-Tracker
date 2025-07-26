@@ -62,6 +62,11 @@ export default function
       const res = await setDoc(userRef, {
         [timestamp]: newData
       }, { merge: true })
+
+        setSelectedCoffee(null)
+            setHour(0)
+            setMin(0)
+            setCoffeeCost(0)
     }
 
   function handleCloseModal() {
