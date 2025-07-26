@@ -27,7 +27,7 @@ export default function
   const { globalData, setGlobalData , globalUser } = useAuth()
 
   // Now we will define a function here
-  function handleSubmitForm() {
+  async function handleSubmitForm() {
     if (!isAuthenticated) {
       setShowModal(true)
       return
