@@ -12,7 +12,7 @@ export default function History() {
         {Object.keys(coffeeConsumptionHistory).sort((a, b) => b - a).map((utcTime, coffeeIndex) => {
           const coffee = coffeeConsumptionHistory[utcTime]
           const timeSinceConsume = timeSinceConsumption(utcTime)
-          const orginalAmount = getCaffeineAmount(cofee.name)
+          const orginalAmount = getCaffeineAmount(coffee.name)
           const remainingAmount = calculateCurrentCaffeineLevel({
             [utcTime]:cofee
           })
