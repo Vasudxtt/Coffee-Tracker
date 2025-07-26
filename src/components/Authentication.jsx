@@ -8,7 +8,7 @@ export default function Authentication() {
   const [isAuthenticating, setIsAuthenticating] = useState(false)
 
   async function handleAuthenticate() {
-
+    if (!email || !email.includes('@') || !password || password.length < 6 || isAuthenticating) { return }
   }
 
 
@@ -16,7 +16,7 @@ export default function Authentication() {
     <>
       <h2 className="sign-up-text">{isRegistration ? 'Sign Up' : 'Login'}</h2>
       {/* <p>Welcome to Coffee Tracker! Please sign up or login to continue.</p> */}
-       <p>{isRegistration ? 'Create an account!' : 'Sign in to your account!'}</p>
+      <p>{isRegistration ? 'Create an account!' : 'Sign in to your account!'}</p>
       <input value={email} onChange={(e) => { setEmail(e.target.value) }} type="email" placeholder="Email" />
       <input value={password} onChange={(e) => { setPassword(e.target.value) }} type="password" placeholder="Password" />
       <button onClick={handleAuthenticate}><p>Submit</p></button>
