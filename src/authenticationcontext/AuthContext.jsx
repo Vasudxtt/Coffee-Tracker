@@ -22,12 +22,12 @@ export function AuthProvider(props) {
     return signInWithEmailAndPassword(auth, email, password)
   }
 
-  
-    function logout() {
-        setUser(null)
-        setGlobalData(null)
-        return signOut(auth)
-    }
+
+  function logout() {
+    setUser(null)
+    setGlobalData(null)
+    return signOut(auth)
+  }
 
   const value = { user, globalData, setGlobalData, isLoading }
 
