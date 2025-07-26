@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useAuth } from "../authenticationcontext/AuthContext"
 
 export default function Authentication() {
 
@@ -6,6 +7,7 @@ export default function Authentication() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [isAuthenticating, setIsAuthenticating] = useState(false)
+  const { signup, login } = useAuth()
 
   async function handleAuthenticate() {
     if (!email || !email.includes('@') || !password || password.length < 6 || isAuthenticating) { return }
