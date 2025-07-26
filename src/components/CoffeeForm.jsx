@@ -39,7 +39,7 @@ export default function
     <>
 
       {showModal && (<Modal handleCloseModal={handleCloseModal}>
-        <Authentication handleCloseModal={() => { setShowModal(false) }} />
+        <Authentication handleCloseModal={handleCloseModal} />
       </Modal>)}
 
       <div className="section-header">
